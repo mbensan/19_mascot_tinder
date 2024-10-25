@@ -1,6 +1,9 @@
 <p style="color: green"><%= notice %></p>
-
-<%= render @pet %>
+<div class="row">
+  <div class="col-12 col-md-4 offset-md-4">
+    <%= render @pet %>
+  </div>
+</div>
 
 <div>
   <%= link_to "Edit this pet", edit_pet_path(@pet) %> |
