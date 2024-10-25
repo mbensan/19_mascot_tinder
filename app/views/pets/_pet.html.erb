@@ -1,0 +1,20 @@
+<div class="p-2" id="<%= dom_id pet %>">
+  <div class="card">
+    <div class="card-img">
+      <%=image_tag pet.images[0], class: 'card-img-top'%>
+    </div>
+    <div class="card-body">
+      <div class="owner-avatar">
+        <%=image_tag pet.user.images[0].url, class: 'w-50 rounded-circle'%>
+      </div>
+      <h5 class="card-title"><%=pet.name%></h5>
+      <p class="card-text">
+        <b>Raza:</b><%=pet.race%><br>
+        <b>Edad:</b><%=pet.age%><br>
+        <b>Género:</b><%=pet.gender%><br>
+      </p>
+      <%= link_to "Show this pet", pet, class: 'btn btn-primary' %>
+    </div>
+  </div>
+
+</div>
